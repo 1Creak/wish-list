@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+/*font-family: "Playwrite IS", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*font-family: "Bebas Neue", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+/*font-family: "Amatic SC", sans-serif;*/
+
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #92C7CF;
+    font-family: "Playwrite IS", cursive;
+}
+a{
+    text-decoration: none;
+    color: #E5E1DA;
+}
+a:hover{
+    color: #FBF9F1;
+}
+/* Header */
+.front-page-header{
+    position: relative;
+}
+.front-page-header h1{
+    color: #FBF9F1;
+    text-transform: uppercase;
+    font-family: "Amatic SC", sans-serif;
+    letter-spacing: 4px;
+    font-size: 64px;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+/* Friends */
+.friends{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.friends h2{
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+.dark-bg{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+.friends-julia, .friends-eugene, .friends-nadia{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1) brightness(0.8);
+    transition: .5s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.friends-julia:hover, .friends-eugene:hover, .friends-nadia:hover{
+    filter: grayscale(0) brightness(1);
+    transition: .5s;
+}
+.friends-julia:hover h2, .friends-eugene:hover h2, .friends-nadia:hover h2{
+    opacity: 1;
+    transition: .5s;
+}
+
+.friends-julia{
+    background-image: url("julia/img/bg.jpg");
+}
+.friends-eugene{
+    background-image: url("eugene/img/bg.jpg");
+}
+.friends-nadia{
+    background-image: url("nadia/img/bgh.jpg");
+
+}
