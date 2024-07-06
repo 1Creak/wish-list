@@ -112,3 +112,29 @@ a:hover{
     right: 50px !important;
     z-index: 2;
 }
+/* FAQ */
+.faq-icon{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.faq-icon img{
+    width: 50px;
+    transition: transform 0.1s;
+}
+.shake {
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(-2px, 0);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate(2px, 0);
+    }
+}
