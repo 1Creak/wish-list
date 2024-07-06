@@ -20,7 +20,7 @@ a{
     color: #E5E1DA;
 }
 a:hover{
-    color: #FBF9F1;
+    color: #FBF9F1 !important;
 }
 /* Header */
 .front-page-header{
@@ -90,4 +90,25 @@ a:hover{
 .friends-nadia{
     background-image: url("nadia/img/bgh.jpg");
 
+}
+@media screen and (max-width: 992px) {
+    .friends-julia, .friends-eugene, .friends-nadia{
+        filter: none;
+    }
+    h2{
+        opacity: 1 !important;
+        color: white ;
+    }
+}
+/* Slider */
+.slick-initialized .slick-slide{
+    height: 100vh;
+}
+.slick-prev{
+    left: 50px !important;
+    z-index: 2;
+}
+.slick-next{
+    right: 50px !important;
+    z-index: 2;
 }
